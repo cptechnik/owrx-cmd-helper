@@ -1,0 +1,11 @@
+#!/bin/bash
+echo ""
+netstat -t -a|grep 8473|cut -c44-66
+echo ""
+echo "numbers:"
+netstat -t -a -n|grep 8473|cut -c44-66
+echo -e "\nsteeg:"
+ping steeg.ddnss.de -c1|grep from|cut -c14-60
+echo -e "\ncpt:"
+ping -4 nc-home.cptechnik.de -c1|grep from|cut -c14-58
+ping -4 t-home.cptechnik.de -c1|grep from|cut -c14-70

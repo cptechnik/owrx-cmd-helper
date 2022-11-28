@@ -1,0 +1,15 @@
+#!/bin/bash
+sdrusr
+echo .
+echo stopping sdr
+sdrstop
+echo .
+echo wait
+sleep 30
+echo .
+echo start sdr
+sdrstart
+echo .
+echo ready
+echo .
+
