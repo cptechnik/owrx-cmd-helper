@@ -1,9 +1,0 @@
-#!/bin/bash
-while [ "$1" != '' ]
-  do
-    [ $1 == "" ] && sudo mcedit /etc/openwebrx/config_webrx.py && sleep 2 && sdrrestart  && shift
-    [ $1 == "config" ] && sudo mcedit /etc/openwebrx/config_webrx.py &&  sleep 2 && sdrrestart  && shift
-    [ $1 == "book" ] && sudo mcedit /etc/openwebrx/bookmarks.json && sleep 2 && sdrrestart  && shift
-    [ $1 == "boo" ] && sudo mcedit /etc/openwebrx/bookmarks.json && sleep 2 && sdrrestart  && shift
-    [ $1 == "band" ] && sudo mcedit /etc/openwebrx/bands.json && sleep 2 && sdrrestart && shift
-done
