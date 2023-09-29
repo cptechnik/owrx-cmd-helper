@@ -6,9 +6,9 @@ chsh -s /usr/bin/fish
 #
 mkdir ~/.config/owrx
 # 
-ln -s /var/lib/openwebrx/settings.json settings.json 
-ln -s /var/lib/openwebrx/users.json users.json 
-ln -s /var/lib/openwebrx/bookmarks.json bookmarks.json 
+ln -s /var/lib/openwebrx/settings.json ~/.config/owrx/settings.json 
+ln -s /var/lib/openwebrx/users.json ~/.config/owrx/users.json 
+ln -s /var/lib/openwebrx/bookmarks.json ~/.config/owrx/bookmarks.json 
 #
-ln -s /etc/openwebrx/bands.json bands.json
-ln -s /etc/openwebrx/openwebrx.conf openwebrx.conf
+ln -s /etc/openwebrx/bands.json ~/.config/owrx/bands.json
+ln -s /etc/openwebrx/openwebrx.conf ~/.config/owrx/openwebrx.conf
