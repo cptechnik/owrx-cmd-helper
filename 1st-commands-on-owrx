@@ -1,0 +1,14 @@
+#
+sudo apt install mc lynx fish
+#
+chsh -s /usr/bin/fish
+#
+#
+mkdir ~/.config/owrx
+# 
+ln -s /var/lib/openwebrx/settings.json settings.json 
+ln -s /var/lib/openwebrx/users.json users.json 
+ln -s /var/lib/openwebrx/bookmarks.json bookmarks.json 
+#
+ln -s /etc/openwebrx/bands.json bands.json
+ln -s /etc/openwebrx/openwebrx.conf openwebrx.conf
