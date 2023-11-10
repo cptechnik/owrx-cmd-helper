@@ -1,0 +1,17 @@
+#! /bin/bash
+#debug echo $1
+if [ $1 ]
+then CPUSLEEP=$1
+else CPUSLEEP=3
+fi
+#debug echo.
+#debug echo $CPUSLEEP
+#debug echo.
+while :; 
+do 
+date;
+vcgencmd measure_temp; 
+vcgencmd measure_clock arm;
+echo " ";
+sleep 2; done
+exit 0⏎              
