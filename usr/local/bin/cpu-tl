@@ -7,5 +7,5 @@ fi
 #debug echo.
 #debug echo $CPUSLEEP
 #debug echo.
-while :; do cpu-temp; sleep 2; done
+while :; do vcgencmd measure_temp; sleep 2; done
 exit 0
