@@ -9,6 +9,9 @@ arm_freq
 core_freq
 over_voltage
 gpu_freq
+force_turbo
+arm_freq_min
+...and more [5]
 
 ## overclocking freq tips ##
 https://magpi.raspberrypi.com/articles/how-to-overclock-raspberry-pi-4
@@ -55,6 +58,8 @@ in MHz
   * possible 2000 (upto 2147 some bootfail) at over_voltage=6
   * no sdram overclocking supported
   * gpu std 500, possible 750 
+* Pi 4
+  * standard 2400
 * Raspberry Pi Zero / Zero W
   * possible possible1100 with core_freq=450 and over_voltage=6 
 
@@ -68,5 +73,6 @@ vcgencmd measure_volts core
 Links:
 * [1] https://raspberrypi.stackexchange.com/questions/9034/how-to-change-the-default-governor
 * [2] https://github.com/DavidM42/rpi-cpu.gov
-* https://www.elektronik-kompendium.de/sites/raspberry-pi/1911241.htm
-* https://www.tomshardware.com/how-to/overclock-any-raspberry-pi
+* [3] https://www.elektronik-kompendium.de/sites/raspberry-pi/1911241.htm
+* [4] https://www.tomshardware.com/how-to/overclock-any-raspberry-pi
+* [5] https://www.raspberrypi.com/documentation/computers/config_txt.html#overclocking
