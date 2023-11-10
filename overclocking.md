@@ -15,9 +15,12 @@ https://raspberry.tips/raspberrypi-tutorials/raspberry-pi-3-uebertakten
 
 
 ## governor [1] ##
-R: cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
-W: echo performance > /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
-posssible: conservative, ondemand, userspace, powersave, performance, schedutil
+* standard: ondemand
+* R: cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
+* W:
+  * sudo sh -c "echo powersave > cpu0/cpufreq/scaling_governor"
+  * sudo sh -c "echo performance > cpu0/cpufreq/scaling_governor"
+  * posssible: conservative, ondemand, userspace, powersave, performance, schedutil
 governor-dialog-script: [2]
 
 Commands:
