@@ -1,0 +1,11 @@
+#! /bin/bash
+#debug echo $1
+if [ $1 ]
+then CPUSLEEP=$1
+else CPUSLEEP=3
+fi
+#debug echo.
+#debug echo $CPUSLEEP
+#debug echo.
+while :; do cpu-temp; sleep 2; done
+exit 0
