@@ -4,6 +4,10 @@ sudo apt install mc lynx fish
 chsh -s /usr/bin/fish
 #
 #
+sudo openwebrx admin adduser 
+# sudo openwebrx admin removeuser admin
+sudo openwebrx admin disableuser admin
+#
 mkdir ~/.config/owrx
 # 
 ln -s /var/lib/openwebrx/settings.json ~/.config/owrx/settings.json 
