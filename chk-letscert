@@ -1,0 +1,5 @@
+#! /bin/bash
+# to check the acme-challenge of dns entry for letscert-ssl - just add your own domain!
+echo -e -n "\033[0;33m"
+dig txt _acme-challenge.$1 |grep ^_acme-challenge
+exit 0
